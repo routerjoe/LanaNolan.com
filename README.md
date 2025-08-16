@@ -1,4 +1,4 @@
-# Lana Nolan - Softball Recruiting Website
+# Softball Recruiting Website
 
 A modern, responsive recruiting website for Lana Nolan, Class of 2027 softball recruit. Built with Next.js, TypeScript, and Tailwind CSS to showcase athletic achievements, academic excellence, and recruiting information to college coaches.
 
@@ -192,12 +192,7 @@ Edit the JSON files in the `src/data/` directory:
 
 This project is private and proprietary. All rights reserved.
 
-## 📞 Contact
 
-**Lana Nolan**
-- Email: lananolan08@gmail.com
-- Twitter/X: [@LanaNolan02](https://x.com/LanaNolan02)
-- Website: [lananolan.com](https://lananolan.com)
 
 ---
 
