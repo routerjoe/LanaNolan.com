@@ -7,7 +7,7 @@ The website is deployed on Vercel for optimal Next.js performance and global CDN
 
 **Deployment Command:**
 ```bash
-cd lananolan-website
+cd playerprofile-website
 npx vercel --prod
 ```
 

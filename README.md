@@ -36,7 +36,7 @@ A modern, responsive recruiting website for Lana Nolan, Class of 2027 softball r
 ## 📁 Project Structure
 
 ```
-lananolan-website/
+playerprofile-website/
 ├── src/
 │   ├── app/                    # Next.js app router
 │   │   ├── globals.css         # Global styles and design system
@@ -88,7 +88,7 @@ cd LanaNolan.com
 
 2. Navigate to the website directory:
 ```bash
-cd lananolan-website
+cd playerprofile-website
 ```
 
 3. Install dependencies:

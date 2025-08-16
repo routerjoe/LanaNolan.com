@@ -1,3 +1,26 @@
+> History rewrite in progress (removing all references to "playerprofile-website" and "lananolan.com" across files and commit messages; renaming path to [playerprofile-website](playerprofile-website) across entire history). A backup branch will be created locally (backup/pre-rewrite-YYYYMMDDHHMMSS) and origin/main will be force-pushed when finished.
+
+Post-rewrite required actions
+- Local repo (this machine):
+  - [ ] Verify no references remain: git grep -n "playerprofile-website" || true; git grep -n "lananolan.com" || true
+  - [ ] Confirm path exists: ls -1 playerprofile-website
+  - [ ] Run dev from new location: cd playerprofile-website &amp;&amp; npm run dev
+- Collaborators (all other clones):
+  - [ ] Make sure no unpushed local work remains (stash if necessary)
+  - [ ] Reset to rewritten main:
+    - Option A (clean re-clone): rm -rf repo &amp;&amp; git clone &lt;repo-url&gt;
+    - Option B (hard reset): git fetch origin &amp;&amp; git checkout main &amp;&amp; git reset --hard origin/main &amp;&amp; git clean -fd
+- CI/Deploy (Render):
+  - [ ] Service root updated in [render.yaml](render.yaml:1) to playerprofile-website (Blueprint)
+  - [ ] If using existing Render service (manual), ensure Root Directory is playerprofile-website
+- Tags/PRs:
+  - [ ] Any open PRs must be rebased onto the rewritten main (or closed/reopened)
+  - [ ] If you have tags pointing to old history, re-create them if needed
+
+Audit checklist (after rewrite completes)
+- [ ] No file path named playerprofile-website in git log: git log --name-only --oneline | grep -n "playerprofile-website" || true
+- [ ] No commit messages contain "playerprofile-website" or "lananolan.com": git log --oneline | grep -i -E "(playerprofile-website|playerprofile\.com)" || true
+- [ ] Local HEAD contains [playerprofile-website](playerprofile-website) directory and builds successfully
 # PlayerProfile Master Task Tracker
 
 Last updated: 2025-08-16T01:56:37Z

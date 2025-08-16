@@ -23,7 +23,7 @@ Your recruiting website now includes a **built-in admin dashboard** that works p
 1. Go to [render.com](https://render.com) and sign in
 2. Click "New +" → "Web Service"
 3. Connect your GitHub repository
-4. Choose your `lananolan-website` folder
+4. Choose your `playerprofile-website` folder
 
 ### 2. Configure Build Settings
 ```
