@@ -131,8 +131,8 @@ Purpose: Persistent checklist of work items and verification steps for the repo 
   - [ ] Make List view the default calendar view
 - [ ] Typography/contrast
   - [ ] Darken the text shade for "Schedule and Events" and similar headings to match Player Dashboard legibility
-- [ ] Academics
-  - [ ] Remove the Academic section for now
+- [x] Academics
+-   [x] Remove the Academic section for now
 - [ ] Quick Action section
   - [ ] Remove "Schedule a call" and "Video library" links
   - [ ] Add Twitter QR code in Quick Action and remove it from the bottom of the page
@@ -201,16 +201,16 @@ Decision: Keep the app in the subfolder [playerprofile-website](playerprofile-we
   - [ ] Ensure public render in [src/components/sections/PlayerProfile.tsx](playerprofile-website/src/components/sections/PlayerProfile.tsx) reflects saved values after refresh
   - [ ] Show confirmation after successful save
 
-- [ ] Recruiting Package - PDF management
-  - [ ] Implement upload of PDF
-    - [ ] Backend: handler/validation in [src/app/api/admin/recruiting-packet/route.ts](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts)
-    - [ ] Frontend: upload UI in [src/app/admin/page.tsx](playerprofile-website/src/app/admin/page.tsx)
-  - [ ] Implement preview of uploaded PDF
-    - [ ] Serve/view from [public/uploads/pdfs/](playerprofile-website/public/uploads/pdfs)
-  - [ ] Implement delete of previously uploaded PDF
-    - [ ] Backend: delete endpoint in [src/app/api/admin/recruiting-packet/route.ts](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts)
-    - [ ] Frontend: delete action with confirm in [src/app/admin/page.tsx](playerprofile-website/src/app/admin/page.tsx)
-  - [ ] Verification: upload → preview → delete flows work; files appear/remove under [public/uploads/pdfs/](playerprofile-website/public/uploads/pdfs)
+- [x] Recruiting Package - PDF management
+  - [x] Implement upload of PDF
+    - [x] Backend: handler/validation in [src/app/api/admin/recruiting-packet/route.ts](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts)
+    - [x] Frontend: upload UI in [src/app/admin/page.tsx](playerprofile-website/src/app/admin/page.tsx)
+  - [x] Implement preview of uploaded PDF
+    - [x] Serve/view from [public/uploads/pdfs/](playerprofile-website/public/uploads/pdfs)
+  - [x] Implement delete of previously uploaded PDF
+    - [x] Backend: delete endpoint in [src/app/api/admin/recruiting-packet/route.ts](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts)
+    - [x] Frontend: delete action with confirm in [src/app/admin/page.tsx](playerprofile-website/src/app/admin/page.tsx)
+  - [x] Verification: upload → preview → delete flows work; files appear/remove under [public/uploads/pdfs/](playerprofile-website/public/uploads/pdfs)
 
 - [ ] Blog updates
   - [ ] Add timestamp field for scheduled posting in Admin and persist via [src/app/api/admin/blog/route.ts](playerprofile-website/src/app/api/admin/blog/route.ts)
