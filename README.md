@@ -202,3 +202,33 @@ This project is private and proprietary. All rights reserved.
 ---
 
 *Built with ❤️ for recruiting success*
+## 🔐 Environment Variables
+
+Configure these on your hosting platform (Vercel recommended). The admin dashboard and protected API routes require matching tokens.
+
+```env
+# Admin auth tokens (must match)
+ADMIN_TOKEN=your-strong-random-token
+NEXT_PUBLIC_ADMIN_TOKEN=your-strong-random-token
+
+# Optional UX/security controls
+
+# Public schedule polling interval override (milliseconds)
+# Defaults: 30,000 in development, 300,000 (5 minutes) in production
+NEXT_PUBLIC_SCHEDULE_POLL_INTERVAL_MS=300000
+
+# Optional: server-side guard for /admin
+# If 'true', unauthorized visits to /admin are redirected to home
+ADMIN_GUARD_REDIRECT=true
+# or (client-exposed toggle)
+# NEXT_PUBLIC_ADMIN_GUARD_REDIRECT=true
+
+# Site URL for metadata and links
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+```
+
+Notes:
+- ADMIN_TOKEN: server-side token validated by middleware for /api/admin/* requests.
+- NEXT_PUBLIC_ADMIN_TOKEN: token used by the Admin UI to send Authorization: Bearer and set the admin_token cookie; must equal ADMIN_TOKEN.
+- NEXT_PUBLIC_SCHEDULE_POLL_INTERVAL_MS: optional override for the public schedule polling interval.
+- ADMIN_GUARD_REDIRECT / NEXT_PUBLIC_ADMIN_GUARD_REDIRECT: optional protection for /admin; when enabled and token missing/invalid, requests are redirected to the homepage.
