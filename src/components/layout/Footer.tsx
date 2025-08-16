@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { cn } from '@/utils/helpers';
-import { SITE_CONFIG, SOCIAL_LINKS } from '@/utils/constants';
+import { cn } from '../../utils/helpers';
+import { SITE_CONFIG, SOCIAL_LINKS } from '../../utils/constants';
 import { Mail, ExternalLink, Heart, ArrowUp } from 'lucide-react';
-import Button from '@/components/ui/Button';
+import Button from '../ui/Button';
 
 interface FooterProps {
   className?: string;

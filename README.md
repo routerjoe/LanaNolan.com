@@ -36,40 +36,23 @@ A modern, responsive recruiting website for Player Profile, Class of 2027 softba
 ## 📁 Project Structure
 
 ```
-playerprofile-website/
-├── src/
-│   ├── app/                    # Next.js app router
-│   │   ├── globals.css         # Global styles and design system
-│   │   ├── layout.tsx          # Root layout with SEO
-│   │   └── page.tsx            # Homepage
-│   ├── components/
-│   │   ├── layout/             # Layout components
-│   │   │   ├── Header.tsx      # Navigation header
-│   │   │   ├── Footer.tsx      # Site footer
-│   │   │   └── Layout.tsx      # Main layout wrapper
-│   │   ├── sections/           # Page sections
-│   │   │   └── Hero.tsx        # Hero landing section
-│   │   ├── ui/                 # Reusable UI components
-│   │   │   ├── Button.tsx      # Button component
-│   │   │   └── Card.tsx        # Card component
-│   │   └── features/           # Feature-specific components
-│   ├── data/                   # JSON data files
-│   │   ├── player-profile.json # Player information
-│   │   ├── schedule.json       # Events and schedule
-│   │   └── blog-posts.json     # News and updates
-│   ├── types/                  # TypeScript type definitions
-│   │   ├── player.ts           # Player-related types
-│   │   ├── schedule.ts         # Schedule types
-│   │   └── content.ts          # Content types
-│   └── utils/                  # Utility functions
-│       ├── constants.ts        # App constants
-│       └── helpers.ts          # Helper functions
-├── public/                     # Static assets
-├── docs/                       # Documentation
-│   ├── website-architecture-plan.md
-│   ├── content-strategy-wireframes.md
-│   └── implementation-guide.md
-└── package.json
+.
+├── src/                       # Next.js app router and application code
+│   ├── app/                   # Global styles, layout, pages (App Router)
+│   ├── components/            # UI, layout, and section components
+│   ├── data/                  # JSON data persisted by Admin dashboard
+│   ├── lib/                   # Libraries (e.g., Sanity client)
+│   ├── types/                 # TypeScript type definitions
+│   └── utils/                 # Utilities and helpers
+├── public/                    # Static assets
+├── sanity/                    # Sanity schemas/config
+├── next.config.js
+├── tsconfig.json
+├── package.json
+├── postcss.config.mjs
+├── eslint.config.mjs
+├── vercel.json
+└── README.md
 ```
 
 ## 🛠️ Development

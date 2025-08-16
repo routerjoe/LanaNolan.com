@@ -15,7 +15,7 @@ export default defineConfig({
   
   plugins: [
     structureTool({
-      structure: (S) =>
+      structure: (S: any) =>
         S.list()
           .title('Content Management')
           .items([
@@ -56,10 +56,10 @@ export default defineConfig({
   
   document: {
     // Remove 'Create' button on Singleton documents
-    actions: (prev, context) => {
+    actions: (prev: any, context: any) => {
       if (context.schemaType === 'playerProfile') {
         // action may not be typed as a string in Sanity types; coerce safely
-        return prev.filter((item) => String(item.action) !== 'create')
+        return prev.filter((item: any) => String(item.action) !== 'create')
       }
       return prev
     }

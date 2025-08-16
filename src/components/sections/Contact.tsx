@@ -3,11 +3,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
-import { cn } from '@/utils/helpers';
-import Card, { CardHeader, CardContent } from '@/components/ui/Card';
-import Button from '@/components/ui/Button';
+import { cn } from '../../utils/helpers';
+import Card, { CardHeader, CardContent } from '../ui/Card';
+import Button from '../ui/Button';
 import { Mail, MessageSquare, Download, ExternalLink, Send, Clock } from 'lucide-react';
-import { generateRecruitingPacketPDF, getSampleRecruitingData } from '@/utils/pdfGenerator';
+import { generateRecruitingPacketPDF, getSampleRecruitingData } from '../../utils/pdfGenerator';
 
 interface ContactProps {
   className?: string;

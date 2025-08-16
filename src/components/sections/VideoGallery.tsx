@@ -3,10 +3,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 // import ReactPlayer from 'react-player';
-import { cn } from '@/utils/helpers';
-import Card, { CardContent } from '@/components/ui/Card';
-import Button from '@/components/ui/Button';
-import LoadingSpinner from '@/components/ui/LoadingSpinner';
+import { cn } from '../../utils/helpers';
+import Card, { CardContent } from '../ui/Card';
+import Button from '../ui/Button';
+import LoadingSpinner from '../ui/LoadingSpinner';
 import { Play, X, Clock, Calendar, ExternalLink } from 'lucide-react';
 
 interface VideoGalleryProps {

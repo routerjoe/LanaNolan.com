@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { cn } from '@/utils/helpers';
+import { cn } from '../../utils/helpers';
 import Header from './Header';
 import Footer from './Footer';
 

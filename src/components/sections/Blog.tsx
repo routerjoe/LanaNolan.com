@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { cn } from '@/utils/helpers';
-import Card, { CardContent } from '@/components/ui/Card';
-import Button from '@/components/ui/Button';
+import { cn } from '../../utils/helpers';
+import Card, { CardContent } from '../ui/Card';
+import Button from '../ui/Button';
 import { Calendar, ArrowRight, ExternalLink, Trophy, BookOpen, Target, TrendingUp } from 'lucide-react';
 
 interface BlogProps {

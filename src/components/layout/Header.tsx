@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { cn } from '@/utils/helpers';
-import { NAVIGATION_ITEMS, SITE_CONFIG } from '@/utils/constants';
-import Button from '@/components/ui/Button';
+import { cn } from '../../utils/helpers';
+import { NAVIGATION_ITEMS, SITE_CONFIG } from '../../utils/constants';
+import Button from '../ui/Button';
 import { Menu, X, Mail, ExternalLink } from 'lucide-react';
 
 interface PlayerData {

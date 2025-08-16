@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { cn } from '@/utils/helpers';
-import Card, { CardHeader, CardContent } from '@/components/ui/Card';
+import { cn } from '../../utils/helpers';
+import Card, { CardHeader, CardContent } from '../ui/Card';
 import { User, MapPin, Calendar, Award, TrendingUp, Target, ExternalLink, Globe } from 'lucide-react';
 
 interface PlayerProfileProps {

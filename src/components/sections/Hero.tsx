@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { cn } from '@/utils/helpers';
-import { SITE_CONFIG } from '@/utils/constants';
-import Button from '@/components/ui/Button';
+import { cn } from '../../utils/helpers';
+import { SITE_CONFIG } from '../../utils/constants';
+import Button from '../ui/Button';
 import { Play, Download, Mail, MapPin, Calendar, Award } from 'lucide-react';
 
 interface PhotosConfig {

@@ -2,10 +2,10 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { cn } from '@/utils/helpers';
-import Card, { CardContent } from '@/components/ui/Card';
-import Button from '@/components/ui/Button';
-import CalendarComponent from '@/components/ui/Calendar';
+import { cn } from '../../utils/helpers';
+import Card, { CardContent } from '../ui/Card';
+import Button from '../ui/Button';
+import CalendarComponent from '../ui/Calendar';
 import { Calendar, MapPin, Clock, Users, ExternalLink } from 'lucide-react';
 
 interface ScheduleProps {
