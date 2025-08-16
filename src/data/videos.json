@@ -1,0 +1,54 @@
+{
+  "videos": [
+    {
+      "id": "2",
+      "title": "Defensive Skills Showcase",
+      "description": "Fielding demonstrations and throwing accuracy from multiple positions",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/images/video-thumb-fielding.jpg",
+      "category": "fielding",
+      "duration": 75,
+      "date": "2024-03-10",
+      "featured": false,
+      "source": "youtube",
+      "gameChangerUrl": null
+    },
+    {
+      "id": "4",
+      "title": "Skills Training Session",
+      "description": "Training drills and skill development work with coaching staff",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "/images/video-thumb-skills.jpg",
+      "category": "skills",
+      "duration": 60,
+      "date": "2024-02-20",
+      "featured": false,
+      "source": "youtube",
+      "gameChangerUrl": null
+    },
+    {
+      "id": "video_1754865644703",
+      "title": "Bunting",
+      "description": "Bunting moves the batter",
+      "url": "/uploads/videos/video_1754865644703.mov",
+      "thumbnail": "/uploads/videos/video_1754865644703.mov",
+      "category": "hitting",
+      "duration": 0,
+      "date": "2025-08-10",
+      "featured": true,
+      "source": "upload"
+    },
+    {
+      "id": "video_1755303895212",
+      "title": "Raisen Hell Worshop Dale",
+      "description": "Striking out skills",
+      "url": "/uploads/videos/video_1755303895212.mov",
+      "thumbnail": "/uploads/videos/video_1755303895212.mov",
+      "category": "hitting",
+      "duration": 0,
+      "date": "2025-08-16",
+      "featured": false,
+      "source": "upload"
+    }
+  ]
+}

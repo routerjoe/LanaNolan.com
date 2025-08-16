@@ -1,0 +1,233 @@
+/* Admin Dashboard Text Color Fixes */
+/* This CSS file fixes light text colors to improve readability */
+
+/* Global text color improvements */
+.admin-dashboard {
+  color: #1f2937; /* gray-800 */
+}
+
+/* Form labels - make them darker */
+.admin-dashboard label {
+  color: #374151 !important; /* gray-700 */
+  font-weight: 500;
+}
+
+/* Input text colors */
+.admin-dashboard input,
+.admin-dashboard textarea,
+.admin-dashboard select {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+/* Placeholder text */
+.admin-dashboard input::placeholder,
+.admin-dashboard textarea::placeholder {
+  color: #6b7280 !important; /* gray-500 */
+}
+
+/* Navigation tab text */
+.admin-dashboard .nav-tab {
+  color: #374151 !important; /* gray-700 */
+}
+
+.admin-dashboard .nav-tab:hover {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+.admin-dashboard .nav-tab.active {
+  color: #059669 !important; /* green-700 */
+}
+
+/* Card headings */
+.admin-dashboard h1,
+.admin-dashboard h2,
+.admin-dashboard h3,
+.admin-dashboard h4,
+.admin-dashboard h5,
+.admin-dashboard h6 {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+/* Paragraph text */
+.admin-dashboard p {
+  color: #374151 !important; /* gray-700 */
+}
+
+/* Small text and descriptions */
+.admin-dashboard .text-sm,
+.admin-dashboard .text-xs {
+  color: #4b5563 !important; /* gray-600 */
+}
+
+/* Button text improvements */
+.admin-dashboard button {
+  font-weight: 500;
+}
+
+/* Table text */
+.admin-dashboard table th,
+.admin-dashboard table td {
+  color: #374151 !important; /* gray-700 */
+}
+
+/* Status badges - ensure good contrast */
+.admin-dashboard .status-badge {
+  font-weight: 600;
+}
+
+/* Blog post content */
+.admin-dashboard .blog-content {
+  color: #1f2937 !important; /* gray-800 */
+  line-height: 1.6;
+}
+
+/* Form field descriptions */
+.admin-dashboard .field-description {
+  color: #6b7280 !important; /* gray-500 */
+  font-size: 0.875rem;
+}
+
+/* Error text */
+.admin-dashboard .error-text {
+  color: #dc2626 !important; /* red-600 */
+}
+
+/* Success text */
+.admin-dashboard .success-text {
+  color: #059669 !important; /* green-600 */
+}
+
+/* Warning text */
+.admin-dashboard .warning-text {
+  color: #d97706 !important; /* amber-600 */
+}
+
+/* Info text */
+.admin-dashboard .info-text {
+  color: #2563eb !important; /* blue-600 */
+}
+
+/* Sidebar text */
+.admin-dashboard .sidebar-text {
+  color: #374151 !important; /* gray-700 */
+}
+
+/* Modal text */
+.admin-dashboard .modal-text {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+/* List items */
+.admin-dashboard li {
+  color: #374151 !important; /* gray-700 */
+}
+
+/* Links */
+.admin-dashboard a {
+  color: #059669 !important; /* green-600 */
+  text-decoration: none;
+}
+
+.admin-dashboard a:hover {
+  color: #047857 !important; /* green-700 */
+  text-decoration: underline;
+}
+
+/* Focus states */
+.admin-dashboard input:focus,
+.admin-dashboard textarea:focus,
+.admin-dashboard select:focus {
+  border-color: #10b981 !important; /* green-500 */
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
+}
+
+/* Disabled states */
+.admin-dashboard input:disabled,
+.admin-dashboard textarea:disabled,
+.admin-dashboard select:disabled {
+  color: #9ca3af !important; /* gray-400 */
+  background-color: #f9fafb !important; /* gray-50 */
+}
+
+/* Code and monospace text */
+.admin-dashboard code,
+.admin-dashboard pre {
+  color: #1f2937 !important; /* gray-800 */
+  background-color: #f3f4f6 !important; /* gray-100 */
+}
+
+/* Ensure all text in cards is readable */
+.admin-dashboard .card-content {
+  color: #374151 !important; /* gray-700 */
+}
+
+.admin-dashboard .card-title {
+  color: #1f2937 !important; /* gray-800 */
+  font-weight: 600;
+}
+
+.admin-dashboard .card-subtitle {
+  color: #6b7280 !important; /* gray-500 */
+}
+
+/* Mobile-specific text improvements */
+@media (max-width: 640px) {
+  .admin-dashboard .mobile-text {
+    color: #374151 !important; /* gray-700 */
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  
+  .admin-dashboard .mobile-heading {
+    color: #1f2937 !important; /* gray-800 */
+    font-weight: 600;
+  }
+}
+
+/* Specific component fixes */
+.admin-dashboard .blog-stats .stat-value {
+  color: #1f2937 !important; /* gray-800 */
+  font-weight: 700;
+}
+
+.admin-dashboard .blog-stats .stat-label {
+  color: #6b7280 !important; /* gray-500 */
+  font-weight: 500;
+}
+
+/* Video management text */
+.admin-dashboard .video-title {
+  color: #1f2937 !important; /* gray-800 */
+  font-weight: 600;
+}
+
+.admin-dashboard .video-description {
+  color: #4b5563 !important; /* gray-600 */
+}
+
+/* Photo management text */
+.admin-dashboard .photo-alt {
+  color: #4b5563 !important; /* gray-600 */
+  font-size: 0.75rem;
+}
+
+/* Schedule event text */
+.admin-dashboard .event-title {
+  color: #1f2937 !important; /* gray-800 */
+  font-weight: 600;
+}
+
+.admin-dashboard .event-details {
+  color: #4b5563 !important; /* gray-600 */
+}
+
+/* Social media post text */
+.admin-dashboard .social-post-content {
+  color: #374151 !important; /* gray-700 */
+  line-height: 1.5;
+}
+
+.admin-dashboard .social-post-meta {
+  color: #6b7280 !important; /* gray-500 */
+  font-size: 0.75rem;
+}
