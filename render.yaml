@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: playerprofile-website
+    env: node
+    rootDir: lananolan-website
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Set these in the Render dashboard (recommended) or add here if you prefer to store in repo:
+      # - key: ADMIN_TOKEN
+      #   value: <secure-random-token>
+      # - key: NEXT_PUBLIC_ADMIN_TOKEN
+      #   value: <same-secure-random-token>
+      # - key: NEXT_PUBLIC_SITE_URL
+      #   value: https://your-domain.com
