@@ -1,15 +1,6 @@
 > History rewrite in progress (removing all references to "playerprofile-website" and "lananolan.com" across files and commit messages; renaming path to [playerprofile-website](playerprofile-website) across entire history). A backup branch will be created locally (backup/pre-rewrite-YYYYMMDDHHMMSS) and origin/main will be force-pushed when finished.
 
-Post-rewrite required actions
-- Local repo (this machine):
-  - [ ] Verify no references remain: git grep -n "playerprofile-website" || true; git grep -n "lananolan.com" || true
-  - [ ] Confirm path exists: ls -1 playerprofile-website
-  - [ ] Run dev from new location: cd playerprofile-website &amp;&amp; npm run dev
-- Collaborators (all other clones):
-  - [ ] Make sure no unpushed local work remains (stash if necessary)
-  - [ ] Reset to rewritten main:
-    - Option A (clean re-clone): rm -rf repo &amp;&amp; git clone &lt;repo-url&gt;
-    - Option B (hard reset): git fetch origin &amp;&amp; git checkout main &amp;&amp; git reset --hard origin/main &amp;&amp; git clean -fd
+
 - CI/Deploy (Render):
   - [ ] Service root updated in [render.yaml](render.yaml:1) to playerprofile-website (Blueprint)
   - [ ] If using existing Render service (manual), ensure Root Directory is playerprofile-website
@@ -17,36 +8,26 @@ Post-rewrite required actions
   - [ ] Any open PRs must be rebased onto the rewritten main (or closed/reopened)
   - [ ] If you have tags pointing to old history, re-create them if needed
 
-Audit checklist (after rewrite completes)
-- [ ] No file path named playerprofile-website in git log: git log --name-only --oneline | grep -n "playerprofile-website" || true
-- [ ] No commit messages contain "playerprofile-website" or "lananolan.com": git log --oneline | grep -i -E "(playerprofile-website|playerprofile\.com)" || true
-- [ ] Local HEAD contains [playerprofile-website](playerprofile-website) directory and builds successfully
-# PlayerProfile Master Task Tracker
 
-Last updated: 2025-08-16T04:57:44Z
+
+Last updated: 2025-08-16T13:26:25Z
 
 Purpose: Persistent checklist of work items and verification steps for the repo [playerprofile](README.md).
 
-## Current Local Health Snapshot
-- Repo branch: main, tracking origin/main, ahead/behind 0/0
-- Local changes:
-  - Modified: [playerprofile-website](playerprofile-website)
-  - Deleted: [lananolan.com.code-workspace](lananolan.com.code-workspace)
-  - Untracked: [playerprofile.com.code-workspace](playerprofile.com.code-workspace)
-- Dev server renders at http://localhost:3000; API routes 200 OK
+
 
 ---
 
 ## High Priority Fixes (blocking clean production build)
 
-- [ ] React hydration error in PlayerProfile section
-  - [ ] Reproduce and capture console logs on initial page load
-  - [ ] Audit SSR/CSR divergence around the MapPin/icon block in [src/components/sections/PlayerProfile.tsx:259](playerprofile-website/src/components/sections/PlayerProfile.tsx:259) and surrounding motion wrappers
-  - [ ] Ensure identical markup/element types server vs client (avoid conditional p/div swaps; keep structure stable when data is missing)
-  - [ ] Eliminate non-determinism in render paths (no Date.now(), Math.random(), or locale-variant formatting on server; snapshot external data or provide deterministic defaults)
-  - [ ] Framer Motion: stabilize props for SSR (consider initial={false} or gate animations to client via useEffect to avoid server/client prop mismatches)
-  - [ ] Validate no invalid HTML nesting in the affected subtree
-  - [ ] Confirm fix in dev and production (no hydration warnings)
+- [x] React hydration error in PlayerProfile section
+  - [x] Reproduce and capture console logs on initial page load
+  - [x] Audit SSR/CSR divergence around the MapPin/icon block in [src/components/sections/PlayerProfile.tsx:259](playerprofile-website/src/components/sections/PlayerProfile.tsx:259) and surrounding motion wrappers
+  - [x] Ensure identical markup/element types server vs client (avoid conditional p/div swaps; keep structure stable when data is missing)
+  - [x] Eliminate non-determinism in render paths (no Date.now(), Math.random(), or locale-variant formatting on server; snapshot external data or provide deterministic defaults)
+  - [x] Framer Motion: stabilize props for SSR (consider initial={false} or gate animations to client via useEffect to avoid server/client prop mismatches)
+  - [x] Validate no invalid HTML nesting in the affected subtree
+  - [x] Confirm fix in dev and production (no hydration warnings)
 
 - [ ] Admin Dashboard input handler runtime error
   - [ ] Reproduce error and capture stack trace within AdminDashboard
@@ -57,10 +38,8 @@ Purpose: Persistent checklist of work items and verification steps for the repo 
   - [ ] Confirm fix by exercising the form; no console errors and values persist/save as expected
 
 - [x] PWA icon 404 for /icon-192.png
-  - Either add icons:
-    - [ ] Provide [public/icon-192.png](playerprofile-website/public/icon-192.png)
-    - [ ] Provide [public/icon-512.png](playerprofile-website/public/icon-512.png)
-  - Or update manifest to reference existing assets:
+ 
+  - Update manifest to reference existing assets:
     - [x] Edit [public/manifest.json](playerprofile-website/public/manifest.json) to use [public/icon.svg](playerprofile-website/public/icon.svg)
 
 - [ ] Next/Image "fill" parent positioning
@@ -71,50 +50,40 @@ Purpose: Persistent checklist of work items and verification steps for the repo 
 
 - [ ] ESLint errors to resolve
   - JSX unescaped quotes:
-    - [ ] [src/app/admin/page.tsx:1825](playerprofile-website/src/app/admin/page.tsx:1825)
-    - [ ] [src/app/admin/page.tsx:2075](playerprofile-website/src/app/admin/page.tsx:2075)
-    - [ ] [src/app/admin/page.tsx:2153](playerprofile-website/src/app/admin/page.tsx:2153)
-    - [ ] [src/app/admin/page.tsx:2231](playerprofile-website/src/app/admin/page.tsx:2231)
-    - [ ] [src/components/sections/Contact.tsx:145](playerprofile-website/src/components/sections/Contact.tsx:145)
-    - [ ] [src/components/sections/Contact.tsx:365](playerprofile-website/src/components/sections/Contact.tsx:365)
-    - [ ] [src/components/sections/Schedule.tsx:464](playerprofile-website/src/components/sections/Schedule.tsx:464)
+    - [x] [src/app/admin/page.tsx:1825](playerprofile-website/src/app/admin/page.tsx:1825)
+    - [x] [src/app/admin/page.tsx:2075](playerprofile-website/src/app/admin/page.tsx:2075)
+    - [x] [src/app/admin/page.tsx:2153](playerprofile-website/src/app/admin/page.tsx:2153)
+    - [x] [src/app/admin/page.tsx:2231](playerprofile-website/src/app/admin/page.tsx:2231)
+    - [x] [src/components/sections/Contact.tsx:145](playerprofile-website/src/components/sections/Contact.tsx:145)
+    - [x] [src/components/sections/Contact.tsx:365](playerprofile-website/src/components/sections/Contact.tsx:365)
+    - [x] [src/components/sections/Schedule.tsx:464](playerprofile-website/src/components/sections/Schedule.tsx:464)
   - Unexpected any:
-    - [ ] [src/app/api/admin/blog/route.ts:175](playerprofile-website/src/app/api/admin/blog/route.ts:175)
-    - [ ] [src/app/api/admin/player/route.ts:9](playerprofile-website/src/app/api/admin/player/route.ts:9)
-    - [ ] [src/app/api/admin/player/route.ts:14](playerprofile-website/src/app/api/admin/player/route.ts:14)
-    - [ ] [src/app/api/admin/recruiting-packet/route.ts:11](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts:11)
-    - [ ] [src/app/api/admin/recruiting-packet/route.ts:59](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts:59)
-    - [ ] [src/app/api/admin/recruiting-packet/route.ts:86](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts:86)
-    - [ ] [src/app/api/admin/schedule/route.ts:10](playerprofile-website/src/app/api/admin/schedule/route.ts:10)
-    - [ ] [src/app/api/admin/social/route.ts:152](playerprofile-website/src/app/api/admin/social/route.ts:152)
-    - [ ] [src/lib/sanity.ts:14](playerprofile-website/src/lib/sanity.ts:14)
-    - [ ] [src/utils/helpers.ts:125](playerprofile-website/src/utils/helpers.ts:125)
-    - [ ] [src/utils/pdfGenerator.ts:67](playerprofile-website/src/utils/pdfGenerator.ts:67)
+    - [x] [src/app/api/admin/blog/route.ts:175](playerprofile-website/src/app/api/admin/blog/route.ts:175)
+    - [x] [src/app/api/admin/player/route.ts:9](playerprofile-website/src/app/api/admin/player/route.ts:9)
+    - [x] [src/app/api/admin/player/route.ts:14](playerprofile-website/src/app/api/admin/player/route.ts:14)
+    - [x] [src/app/api/admin/recruiting-packet/route.ts:11](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts:11)
+    - [x] [src/app/api/admin/recruiting-packet/route.ts:59](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts:59)
+    - [x] [src/app/api/admin/recruiting-packet/route.ts:86](playerprofile-website/src/app/api/admin/recruiting-packet/route.ts:86)
+    - [x] [src/app/api/admin/schedule/route.ts:10](playerprofile-website/src/app/api/admin/schedule/route.ts:10)
+    - [x] [src/app/api/admin/social/route.ts:152](playerprofile-website/src/app/api/admin/social/route.ts:152)
+    - [x] [src/lib/sanity.ts:14](playerprofile-website/src/lib/sanity.ts:14)
+    - [x] [src/utils/helpers.ts:125](playerprofile-website/src/utils/helpers.ts:125)
+    - [x] [src/utils/pdfGenerator.ts:67](playerprofile-website/src/utils/pdfGenerator.ts:67)
   - Unused imports/variables:
-    - [ ] [src/app/admin/page.tsx:3](playerprofile-website/src/app/admin/page.tsx:3)
-    - [ ] [src/app/admin/page.tsx:521](playerprofile-website/src/app/admin/page.tsx:521)
-    - [ ] [src/components/sections/Blog.tsx:6](playerprofile-website/src/components/sections/Blog.tsx:6)
-    - [ ] [src/components/sections/Blog.tsx:8](playerprofile-website/src/components/sections/Blog.tsx:8)
-    - [ ] [src/components/sections/Schedule.tsx:31](playerprofile-website/src/components/sections/Schedule.tsx:31)
-    - [ ] [src/components/sections/PlayerProfile.tsx:150](playerprofile-website/src/components/sections/PlayerProfile.tsx:150)
-    - [ ] [src/components/ui/Calendar.tsx:115](playerprofile-website/src/components/ui/Calendar.tsx:115)
+    - [x] [src/app/admin/page.tsx:3](playerprofile-website/src/app/admin/page.tsx:3)
+    - [x] [src/app/admin/page.tsx:521](playerprofile-website/src/app/admin/page.tsx:521)
+    - [x] [src/components/sections/Blog.tsx:6](playerprofile-website/src/components/sections/Blog.tsx:6)
+    - [x] [src/components/sections/Blog.tsx:8](playerprofile-website/src/components/sections/Blog.tsx:8)
+    - [x] [src/components/sections/Schedule.tsx:31](playerprofile-website/src/components/sections/Schedule.tsx:31)
+    - [x] [src/components/sections/PlayerProfile.tsx:150](playerprofile-website/src/components/sections/PlayerProfile.tsx:150)
+    - [x] [src/components/ui/Calendar.tsx:115](playerprofile-website/src/components/ui/Calendar.tsx:115)
   - React hooks/exhaustive-deps:
-    - [ ] [src/components/sections/Schedule.tsx:79](playerprofile-website/src/components/sections/Schedule.tsx:79)
+    - [x] [src/components/sections/Schedule.tsx:79](playerprofile-website/src/components/sections/Schedule.tsx:79)
+    - [x] Stabilize resize effect dependencies to avoid false positive (completed) [src/components/sections/Schedule.tsx](playerprofile-website/src/components/sections/Schedule.tsx:106)
   - next/no-img-element:
-    - [ ] [src/components/layout/Footer.tsx:184](playerprofile-website/src/components/layout/Footer.tsx:184)
+    - [x] [src/components/layout/Footer.tsx:184](playerprofile-website/src/components/layout/Footer.tsx:184)
   - Empty interface:
-    - [ ] [src/components/ui/Card.tsx:91](playerprofile-website/src/components/ui/Card.tsx:91)
-
----
-
-## Git/Repo Housekeeping
-- [ ] Decide workspace file transition:
-  - [ ] Keep and commit [playerprofile.com.code-workspace](playerprofile.com.code-workspace)
-  - [ ] Remove [lananolan.com.code-workspace](lananolan.com.code-workspace)
-- Example commit sequence:
-  - [ ] git add playerprofile.com.code-workspace
-  - [ ] git add playerprofile.com.code-workspace
-  - [ ] git commit -m "Replace workspace settings; lint fixes and PWA icons"
+    - [x] [src/components/ui/Card.tsx:91](playerprofile-website/src/components/ui/Card.tsx:91)
 
 ---
 
@@ -126,8 +95,8 @@ Purpose: Persistent checklist of work items and verification steps for the repo 
 ---
 
 ## Verification Checklist (run after fixes)
-- [ ] npm run lint passes with 0 errors
-- [ ] npx tsc --noEmit passes with 0 errors
+- [x] npm run lint passes with 0 errors
+- [x] npx tsc --noEmit passes with 0 errors
 - [ ] npm run build finishes successfully
 - [ ] Dev server shows no 404 for manifest icons and no Next/Image "fill" warnings
 
@@ -138,7 +107,7 @@ Purpose: Persistent checklist of work items and verification steps for the repo 
 - This file is intended to be the single source of truth for task tracking; update items and push with each change
 
 ## Player Dashboard and Site Content Updates (requested 2025-08-16)
-- [-] Rename "Admin Dashboard" to "Player Dashboard" across UI and any routes/labels
+- [x] Rename "Admin Dashboard" to "Player Dashboard" across UI and any routes/labels
 - [ ] Make the name at the top of the main site editable via Player Dashboard
   - [ ] Add fields: Player First Name, Player Last Name
   - [ ] Wire these fields to display on the public site header/hero
@@ -168,8 +137,8 @@ Purpose: Persistent checklist of work items and verification steps for the repo 
   - [ ] Remove "Schedule a call" and "Video library" links
   - [ ] Add Twitter QR code in Quick Action and remove it from the bottom of the page
   - [ ] Remove the "Quick Response Guarantee" section
-- [ ] Footer
-  - [ ] Change to "© 2025 Player Profile Hub. All rights reserved"
+- [x] Footer
+- [x] Change to "© 2025 Player Profile Hub. All rights reserved"
 - [ ] Player Dashboard UX
   - [ ] Add a Save button to each section
   - [ ] After save, show confirmation and ensure updates reflect on the public site
