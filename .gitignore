@@ -173,3 +173,5 @@ build/Release
 .cursor/rules/todo2.mdc
 .cursor/mcp.json
 .todo2/
+docs-md-archive.zip
+docs-md/
