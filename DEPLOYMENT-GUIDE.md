@@ -131,7 +131,7 @@ module.exports = nextConfig;
 4. **Subdomain Setup**: Optional www redirect
 
 ### Recommended Domain Names
-- `lananolan.com`
+- `playerprofile.com`
 - `lananolansoftball.com`
 - `lananolan2027.com`
 

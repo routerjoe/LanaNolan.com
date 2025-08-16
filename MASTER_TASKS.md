@@ -96,7 +96,7 @@ Purpose: Persistent checklist of work items and verification steps for the repo 
   - [ ] Remove [lananolan.com.code-workspace](lananolan.com.code-workspace)
 - Example commit sequence:
   - [ ] git add playerprofile.com.code-workspace
-  - [ ] git rm lananolan.com.code-workspace
+  - [ ] git add playerprofile.com.code-workspace
   - [ ] git commit -m "Replace workspace settings; lint fixes and PWA icons"
 
 ---
