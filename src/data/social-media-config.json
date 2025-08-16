@@ -1,0 +1,93 @@
+{
+  "posts": [
+    {
+      "id": "1754864181035",
+      "platform": "twitter",
+      "content": "Strong Start to Spring Season\n\nReflecting on the first few games of the spring season and looking ahead to upcoming tournaments.",
+      "status": "posted",
+      "blogPostId": "post-1",
+      "createdAt": "2025-08-10T22:16:21.035Z",
+      "hashtags": [
+        "#SoftballRecruit",
+        "#Class2027",
+        "#SouthCarolina",
+        "#SoftballLife"
+      ],
+      "mediaUrls": [],
+      "postedAt": "2025-08-11T00:25:03.385Z"
+    },
+    {
+      "id": "1755019767462",
+      "platform": "twitter",
+      "content": "Academic Excellence Recognition\n\nHonored to receive academic recognition while maintaining focus on athletic development.",
+      "status": "posted",
+      "blogPostId": "post-2",
+      "createdAt": "2025-08-12T17:29:27.462Z",
+      "hashtags": [
+        "#SoftballRecruit",
+        "#Class2027",
+        "#SouthCarolina",
+        "#SoftballLife"
+      ],
+      "mediaUrls": [],
+      "postedAt": "2025-08-15T20:12:01.260Z"
+    },
+    {
+      "id": "1755302734268",
+      "platform": "twitter",
+      "content": "Strong Start to Spring Season\n\nReflecting on the first few games of the spring season and looking ahead to upcoming tournaments.",
+      "status": "draft",
+      "blogPostId": "post-1",
+      "createdAt": "2025-08-16T00:05:34.268Z",
+      "hashtags": [
+        "#SoftballRecruit",
+        "#Class2027",
+        "#SouthCarolina",
+        "#SoftballLife"
+      ],
+      "mediaUrls": []
+    },
+    {
+      "id": "1755302876265",
+      "platform": "twitter",
+      "content": "New Blog Post\n\nLast Chance Show Case",
+      "status": "posted",
+      "blogPostId": "1755302739673",
+      "createdAt": "2025-08-16T00:07:56.265Z",
+      "hashtags": [
+        "#SoftballRecruit",
+        "#Class2027",
+        "#SouthCarolina",
+        "#SoftballLife"
+      ],
+      "mediaUrls": [],
+      "postedAt": "2025-08-16T00:17:42.362Z"
+    }
+  ],
+  "settings": {
+    "twitter": {
+      "enabled": false,
+      "autoPost": false,
+      "defaultHashtags": [],
+      "credentials": {
+        "apiKey": "",
+        "apiSecret": "",
+        "accessToken": "",
+        "accessSecret": ""
+      }
+    },
+    "instagram": {
+      "enabled": false,
+      "autoPost": false,
+      "defaultHashtags": [
+        "#SoftballRecruit",
+        "#Class2027",
+        "#SouthCarolina"
+      ]
+    },
+    "facebook": {
+      "enabled": false,
+      "autoPost": false
+    }
+  }
+}

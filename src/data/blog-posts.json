@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": "post-1",
+      "title": "Strong Start to Spring Season",
+      "slug": "strong-start-spring-season",
+      "excerpt": "Reflecting on the first few games of the spring season and looking ahead to upcoming tournaments.",
+      "content": "The spring season has gotten off to a great start with solid performances both at the plate and in the field. Looking forward to showcasing skills at upcoming tournaments and connecting with college coaches.",
+      "publishedAt": "2025-03-01T10:00:00.000Z",
+      "updatedAt": "2025-03-01T10:00:00.000Z",
+      "category": "tournament",
+      "tags": [
+        "spring season",
+        "performance",
+        "recruiting"
+      ],
+      "featured": true,
+      "image": "/images/blog/spring-season.jpg",
+      "autoPostToX": true,
+      "xPostScheduled": false
+    },
+    {
+      "id": "post-2",
+      "title": "Academic Excellence Recognition",
+      "slug": "academic-excellence-recognition",
+      "excerpt": "Honored to receive academic recognition while maintaining focus on athletic development.",
+      "content": "Balancing academics and athletics continues to be a priority. Proud to maintain high academic standards while pursuing softball excellence.",
+      "publishedAt": "2025-02-15T14:30:00.000Z",
+      "updatedAt": "2025-02-15T14:30:00.000Z",
+      "category": "achievement",
+      "tags": [
+        "academics",
+        "recognition",
+        "balance"
+      ],
+      "featured": false,
+      "image": "/images/blog/academic-award.jpg"
+    },
+    {
+      "id": "post-3",
+      "title": "Winter Training Update",
+      "slug": "winter-training-update",
+      "excerpt": "Focused on strength and skill development during the off-season training period.",
+      "content": "The winter training period has been productive with focused work on strength development, hitting mechanics, and defensive skills. Excited to apply these improvements in the upcoming season.",
+      "publishedAt": "2025-01-20T09:00:00.000Z",
+      "updatedAt": "2025-01-20T09:00:00.000Z",
+      "category": "training",
+      "tags": [
+        "training",
+        "development",
+        "preparation"
+      ],
+      "featured": false,
+      "image": "/images/blog/winter-training.jpg"
+    },
+    {
+      "id": "post-4",
+      "title": "Recruiting Process Insights",
+      "slug": "recruiting-process-insights",
+      "excerpt": "Sharing thoughts on the college recruiting journey and connecting with coaching staffs.",
+      "content": "The recruiting process has been an incredible learning experience. Grateful for the opportunity to connect with college coaches and explore programs that align with both athletic and academic goals.",
+      "publishedAt": "2025-01-05T16:00:00.000Z",
+      "updatedAt": "2025-01-05T16:00:00.000Z",
+      "category": "recruiting",
+      "tags": [
+        "recruiting",
+        "college",
+        "journey"
+      ],
+      "featured": true,
+      "image": "/images/blog/recruiting-journey.jpg"
+    },
+    {
+      "id": "1755302739673",
+      "title": "New Blog Post",
+      "content": "Ohana did well sometimes. Lana was named the Master Bunter. Worship Dale and Raise Hell!",
+      "excerpt": "Last Chance Show Case",
+      "date": "2025-08-15",
+      "category": "Tournament",
+      "published": true,
+      "autoPostToX": true,
+      "xPostScheduled": false
+    }
+  ]
+}

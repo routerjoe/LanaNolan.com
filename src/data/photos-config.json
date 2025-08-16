@@ -1,0 +1,39 @@
+{
+  "photos": [
+    {
+      "id": "1",
+      "filename": "hero-default.jpg",
+      "originalName": "hero-background.jpg",
+      "url": "/images/hero-bg.jpg",
+      "alt": "Lana Nolan softball action shot",
+      "category": "hero",
+      "uploadDate": "2025-08-10T21:58:18.377Z",
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "filename": "profile-default.jpg",
+      "originalName": "profile-photo.jpg",
+      "url": "/images/profile.jpg",
+      "alt": "Lana Nolan profile photo",
+      "category": "profile",
+      "uploadDate": "2025-08-10T21:58:18.377Z",
+      "isActive": true
+    },
+    {
+      "id": "1754864246678",
+      "filename": "action-1754864246678.jpeg",
+      "originalName": "IMG_1608.jpeg",
+      "url": "/uploads/action-1754864246678.jpeg",
+      "alt": "IMG_1608.jpeg",
+      "category": "action",
+      "uploadDate": "2025-08-10T22:17:26.680Z",
+      "isActive": false
+    }
+  ],
+  "activePhotos": {
+    "heroImage": "1754864246678",
+    "profileImage": "1754864246678",
+    "featuredAction": "1754864246678"
+  }
+}

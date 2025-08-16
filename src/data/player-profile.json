@@ -1,0 +1,177 @@
+{
+  "personalInfo": {
+    "name": "Lana Nolan",
+    "graduationYear": 2027,
+    "email": "lananolan08@gmail.com",
+    "socialMedia": {
+      "twitter": "https://x.com/LanaNolan02",
+      "email": "lananolan08@gmail.com"
+    },
+    "firstName": "Dale",
+    "lastName": "Eurheart"
+  },
+  "athletics": {
+    "primaryPosition": "2nd Base",
+    "secondaryPositions": [
+      "2nd Base",
+      "Outfield"
+    ],
+    "battingThrows": "R",
+    "hometown": "Summerville, SC",
+    "highSchool": {
+      "name": "Abeka Academy",
+      "coach": "Coach Johnson",
+      "contact": "To be updated",
+      "socialMedia": {
+        "twitter": "https://twitter.com/abekaacademy",
+        "instagram": "",
+        "facebook": "https://facebook.com/abekaacademy",
+        "website": ""
+      },
+      "coachEmail": "coach.johnson@abekaacademy.edu",
+      "coachPhone": "(843) 555-1234",
+      "teamProfileHubUrl": "https://teamprofilehub.com/team/abeka-academy-softball",
+      "socialMediaAllowed": []
+    },
+    "travelTeam": {
+      "name": "Ohana SC 16U King",
+      "coach": "Coach Nate King",
+      "contact": "To be updated",
+      "socialMedia": {
+        "twitter": "https://twitter.com/ohanasc16u",
+        "instagram": "",
+        "facebook": "https://facebook.com/ohanasc",
+        "website": ""
+      },
+      "coachEmail": "coach.king@ohanasc.com",
+      "coachPhone": "(404) 867-5309",
+      "teamProfileHubUrl": "https://teamprofilehub.com/team/ohana-sc-16u-king",
+      "socialMediaAllowed": []
+    },
+    "battingStance": "Right",
+    "throwingHand": "Right"
+  },
+  "academics": {
+    "currentGPA": 3.85,
+    "cumulativeGPA": 3.75,
+    "satScore": 1250,
+    "actScore": 28,
+    "classRank": "Top 10%",
+    "honors": [
+      "Honor Roll",
+      "Academic Excellence Award"
+    ],
+    "awards": [
+      "Student Athlete Award"
+    ],
+    "intendedMajor": "Sports Management"
+  },
+  "measurables": [
+    {
+      "metric": "Hitting Exit Velocity",
+      "value": "65",
+      "date": "2024-01-01",
+      "notes": "To be updated with latest measurements"
+    },
+    {
+      "metric": "Throwing Velocity",
+      "value": "60",
+      "date": "2024-01-01",
+      "notes": "To be updated with latest measurements"
+    },
+    {
+      "metric": "Home to First",
+      "value": "2.9",
+      "date": "2024-01-01",
+      "notes": "To be updated with latest measurements"
+    },
+    {
+      "metric": "60-Yard Dash",
+      "value": "2.95",
+      "date": "2024-01-01",
+      "notes": "To be updated with latest measurements"
+    },
+    {
+      "metric": "Vertical Jump",
+      "value": "6 inches",
+      "date": "2024-01-01",
+      "notes": "To be updated with latest measurements"
+    }
+  ],
+  "videos": [
+    {
+      "id": "sample-1",
+      "title": "Hitting Highlights",
+      "description": "Recent batting practice and game at-bats",
+      "url": "https://example.com/video1",
+      "thumbnail": "/images/video-thumb-1.jpg",
+      "category": "hitting",
+      "duration": 90,
+      "date": "2024-01-15",
+      "featured": true
+    },
+    {
+      "id": "sample-2",
+      "title": "Defensive Skills",
+      "description": "Fielding and throwing demonstrations",
+      "url": "https://example.com/video2",
+      "thumbnail": "/images/video-thumb-2.jpg",
+      "category": "fielding",
+      "duration": 75,
+      "date": "2024-01-10",
+      "featured": false
+    }
+  ],
+  "latestAchievement": {
+    "title": "Master Bunter",
+    "date": "Fall 2024"
+  },
+  "accolades": [
+    {
+      "id": "achievement-1",
+      "title": "Tournament Achievement",
+      "description": "To be updated with recent accomplishments",
+      "date": "2024-01-01",
+      "type": "tournament"
+    }
+  ],
+  "scoutingReport": {
+    "strengths": [
+      "Athleticism",
+      "First step quickness",
+      "Reads off the bat",
+      "Contact skills",
+      "Unhook the trailer"
+    ],
+    "development": [
+      "Strength gains",
+      "Situational hitting",
+      "Racing "
+    ],
+    "intangibles": [
+      "Leadership",
+      "Communication",
+      "Energy",
+      "Accountability",
+      "Worshiping Dale"
+    ]
+  },
+  "references": [
+    {
+      "name": "Travel Coach Name",
+      "title": "Head Coach",
+      "organization": "Travel Team Name",
+      "phone": "To be updated",
+      "email": "To be updated",
+      "relationship": "Travel Team Coach"
+    },
+    {
+      "name": "High School Coach Name",
+      "title": "Head Coach",
+      "organization": "High School Name",
+      "phone": "To be updated",
+      "email": "To be updated",
+      "relationship": "High School Coach"
+    }
+  ]
+}

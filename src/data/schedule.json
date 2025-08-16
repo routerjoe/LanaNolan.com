@@ -1,0 +1,100 @@
+{
+  "events": [
+    {
+      "id": "event-1",
+      "title": "Spring Showcase Tournament",
+      "date": "2025-03-15T09:00:00.000Z",
+      "endDate": "2025-03-17T18:00:00.000Z",
+      "location": "Myrtle Beach, SC",
+      "type": "tournament",
+      "description": "Multi-day tournament with college coaches in attendance",
+      "contactInfo": "Coach Smith - (555) 123-4567",
+      "isAvailable": true,
+      "venue": "Grand Park Sports Complex",
+      "website": "https://example.com/tournament"
+    },
+    {
+      "id": "event-2",
+      "title": "Elite Skills Showcase",
+      "date": "2025-04-05T10:00:00.000Z",
+      "endDate": "2025-04-05T16:00:00.000Z",
+      "location": "Columbia, SC",
+      "type": "showcase",
+      "description": "Individual skills showcase for college recruiters",
+      "contactInfo": "recruiting@eliteskills.com",
+      "isAvailable": true,
+      "venue": "USC Softball Complex",
+      "cost": "$150",
+      "registrationDeadline": "2025-03-25T23:59:59.000Z"
+    },
+    {
+      "id": "event-3",
+      "title": "Summer Training Camp",
+      "date": "2025-06-10T08:00:00.000Z",
+      "endDate": "2025-06-14T17:00:00.000Z",
+      "location": "Clemson, SC",
+      "type": "camp",
+      "description": "5-day intensive training camp with college coaching staff",
+      "contactInfo": "camps@clemson.edu",
+      "isAvailable": true,
+      "venue": "Clemson Softball Stadium",
+      "cost": "$400",
+      "registrationDeadline": "2025-05-15T23:59:59.000Z"
+    },
+    {
+      "id": "event-4",
+      "title": "Campus Visit - University of South Carolina",
+      "date": "2025-04-20T10:00:00.000Z",
+      "endDate": "2025-04-20T15:00:00.000Z",
+      "location": "Columbia, SC",
+      "type": "visit",
+      "description": "Official campus visit and meeting with coaching staff",
+      "contactInfo": "Coach Johnson - (803) 777-1234",
+      "isAvailable": false,
+      "venue": "USC Campus"
+    },
+    {
+      "id": "event-5",
+      "title": "Regional Championship",
+      "date": "2025-05-18T09:00:00.000Z",
+      "endDate": "2025-05-20T18:00:00.000Z",
+      "location": "Atlanta, GA",
+      "type": "tournament",
+      "description": "High-level regional tournament with national exposure",
+      "contactInfo": "info@regionalchampionship.com",
+      "isAvailable": true,
+      "venue": "Atlanta Sports Complex",
+      "website": "https://example.com/regional"
+    },
+    {
+      "id": "event-6",
+      "title": "High School Season Game",
+      "date": "2025-03-25T16:00:00.000Z",
+      "location": "Local High School",
+      "type": "game",
+      "description": "Regular season game - coaches welcome to attend",
+      "isAvailable": true,
+      "venue": "Home Field"
+    },
+    {
+      "id": "1755302947900",
+      "title": "Union Camp",
+      "date": "2025-08-17",
+      "location": "Union, SC",
+      "type": "Camp",
+      "coachAttendance": false,
+      "description": "Fun in the sun",
+      "status": "Upcoming"
+    },
+    {
+      "id": "1755302949485",
+      "title": "New Tournament",
+      "date": "2025-08-16",
+      "location": "",
+      "type": "Tournament",
+      "coachAttendance": false,
+      "description": "",
+      "status": "Upcoming"
+    }
+  ]
+}
