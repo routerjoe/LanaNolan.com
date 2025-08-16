@@ -1,4 +1,4 @@
-# Lana Nolan Recruiting Website - Deployment Guide
+# Player Profile Recruiting Website - Deployment Guide
 
 ## 🚀 Production Deployment
 
@@ -211,8 +211,8 @@ npm install @vercel/analytics
 ```json
 // public/manifest.json
 {
-  "name": "Lana Nolan - Softball Recruit",
-  "short_name": "Lana Nolan",
+  "name": "Player Profile - Softball Recruit",
+  "short_name": "Player Profile",
   "description": "Class of 2027 Softball Recruit",
   "start_url": "/",
   "display": "standalone",
