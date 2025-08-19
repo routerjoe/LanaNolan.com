@@ -77,6 +77,8 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
   const heroPhoto = photosConfig?.photos?.find(
     (photo: any) => photo.id === heroPhotoId
   );
+  // URL‑encode the photo's path to handle spaces and other unsafe characters.
+  const heroPhotoSrc = heroPhoto ? encodeURI(heroPhoto.url) : '';
 
   return (
     <section
@@ -131,7 +133,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
         </div>
 
         {/* Quick stats cards */}
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-5xl">
           {quickStats.map((stat, idx) => (
             <div
               key={idx}
@@ -149,7 +151,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
       <div className="relative flex-1 hidden lg:block">
         {heroPhoto ? (
           <Image
-            src={heroPhoto.url}
+            src={heroPhotoSrc}
             alt={heroPhoto.alt}
             fill
             className="object-cover"
