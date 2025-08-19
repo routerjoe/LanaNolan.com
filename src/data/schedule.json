@@ -81,7 +81,7 @@
       "title": "Union Camp",
       "date": "2025-08-17",
       "location": "Union, SC",
-      "type": "Camp",
+      "type": "camp",
       "coachAttendance": false,
       "description": "Fun in the sun",
       "status": "Upcoming"
@@ -91,7 +91,7 @@
       "title": "New Tournament",
       "date": "2025-08-16",
       "location": "",
-      "type": "Tournament",
+      "type": "tournament",
       "coachAttendance": false,
       "description": "",
       "status": "Upcoming"

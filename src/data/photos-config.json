@@ -4,7 +4,7 @@
       "id": "1",
       "filename": "hero-default.jpg",
       "originalName": "hero-background.jpg",
-      "url": "/images/hero-bg.jpg",
+      "url": "/images/hero.jpg",
       "alt": "Lana Nolan softball action shot",
       "category": "hero",
       "uploadDate": "2025-08-10T21:58:18.377Z",
@@ -14,7 +14,7 @@
       "id": "2",
       "filename": "profile-default.jpg",
       "originalName": "profile-photo.jpg",
-      "url": "/images/profile.jpg",
+      "url": "/images/profile.svg",
       "alt": "Lana Nolan profile photo",
       "category": "profile",
       "uploadDate": "2025-08-10T21:58:18.377Z",
@@ -29,11 +29,21 @@
       "category": "action",
       "uploadDate": "2025-08-10T22:17:26.680Z",
       "isActive": false
+    },
+    {
+      "id": "1755390615647",
+      "filename": "Lana Hitting-1755390615647.jpeg",
+      "originalName": "IMG_1603.jpeg",
+      "url": "/uploads/Lana Hitting-1755390615647.jpeg",
+      "alt": "Lana Hitting",
+      "category": "Lana Hitting",
+      "uploadDate": "2025-08-17T00:30:15.650Z",
+      "isActive": false
     }
   ],
   "activePhotos": {
-    "heroImage": "1754864246678",
-    "profileImage": "1754864246678",
-    "featuredAction": "1754864246678"
+    "heroImage": "1755390615647",
+    "profileImage": "1",
+    "featuredAction": "2"
   }
 }

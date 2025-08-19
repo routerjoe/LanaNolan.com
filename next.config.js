@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   eslint: {
-    ignoreDuringBuilds: true,
+    // Fail builds on lint errors in CI to maintain code quality
+    ignoreDuringBuilds: false,
   },
   typescript: {
     ignoreBuildErrors: false,

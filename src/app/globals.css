@@ -681,6 +681,8 @@ body {
     background: white !important;
     color: black !important;
   }
+}
+ 
 /* Button Base and Variants */
 .bg-primary-50 {
   background-color: var(--primary-50);
@@ -886,19 +888,7 @@ body {
   z-index: 10;
 }
 
-/* Hero Background Image Overlay */
-#home::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('/uploads/hero-bg.jpg') center/cover no-repeat;
-  opacity: 0.3;
-  z-index: 1;
-}
-
+/* Hero Background Image Overlay removed: avoid 404 when uploads image not present */
 #home::after {
   content: '';
   position: absolute;
@@ -931,5 +921,4 @@ body {
 #home button {
   position: relative;
   z-index: 1;
-}
 }

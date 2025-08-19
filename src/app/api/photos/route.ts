@@ -1,4 +1,4 @@
-import fs from 'fs';
+import { readFile, access } from 'fs/promises';
 import path from 'path';
 
 export const runtime = 'nodejs';
@@ -7,7 +7,9 @@ const PHOTOS_CONFIG_PATH = path.join(process.cwd(), 'src/data/photos-config.json
 
 export async function GET() {
   try {
-    if (!fs.existsSync(PHOTOS_CONFIG_PATH)) {
+    try {
+      await access(PHOTOS_CONFIG_PATH);
+    } catch {
       // Return a sane default without writing to disk
       const defaultConfig = {
         photos: [
@@ -44,7 +46,7 @@ export async function GET() {
       });
     }
 
-    const data = fs.readFileSync(PHOTOS_CONFIG_PATH, 'utf8');
+    const data = await readFile(PHOTOS_CONFIG_PATH, 'utf8');
     const json = JSON.parse(data);
     return new Response(JSON.stringify(json), {
       headers: { 'Cache-Control': 'no-store', 'content-type': 'application/json' },
