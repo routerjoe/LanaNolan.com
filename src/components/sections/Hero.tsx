@@ -67,14 +67,20 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
     playerData?.athletics?.highSchool?.coachEmail ||
     SITE_CONFIG.links.email;
 
-  // Helper: select the featured action photo (if configured)
-  const featuredPhoto = photosConfig?.photos?.find(
-    (photo: any) => photo.id === photosConfig?.activePhotos?.featuredAction
+  // Choose the appropriate photo for the hero background:
+  // 1. Prefer the heroImage set via the admin panel.
+  // 2. If none is set, fall back to featuredAction.
+  const heroPhotoId =
+    photosConfig?.activePhotos?.heroImage ||
+    photosConfig?.activePhotos?.featuredAction;
+
+  const heroPhoto = photosConfig?.photos?.find(
+    (photo: any) => photo.id === heroPhotoId
   );
 
   return (
     <section
-      id="hero"
+      id="home"
       className={`relative flex flex-col lg:flex-row w-full min-h-screen overflow-hidden ${className || ''}`}
     >
       {/* Left panel with text and CTAs */}
@@ -141,8 +147,15 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
 
       {/* Right panel with the featured photo */}
       <div className="relative flex-1 hidden lg:block">
-        {featuredPhoto ? (
-          <Image src={featuredPhoto.url} alt={featuredPhoto.alt} fill className="object-cover" />
+        {heroPhoto ? (
+          <Image
+            src={heroPhoto.url}
+            alt={heroPhoto.alt}
+            fill
+            className="object-cover"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            priority
+          />
         ) : (
           <div className="h-full w-full flex items-center justify-center bg-gray-200 text-secondary-700 text-lg font-semibold">
             Professional Action Photo
