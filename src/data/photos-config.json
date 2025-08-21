@@ -32,17 +32,27 @@
     },
     {
       "id": "1755390615647",
-      "filename": "Lana Hitting-1755390615647.jpeg",
+      "filename": "LanaHitting-1755390615647.jpeg",
       "originalName": "IMG_1603.jpeg",
-      "url": "/uploads/Lana Hitting-1755390615647.jpeg",
+      "url": "/uploads/LanaHitting-1755390615647.jpeg",
       "alt": "Lana Hitting",
       "category": "Lana Hitting",
       "uploadDate": "2025-08-17T00:30:15.650Z",
       "isActive": false
+    },
+    {
+      "id": "1755630426426",
+      "filename": "LanaHitting2-1755630426426.jpeg",
+      "originalName": "IMG_1631.jpeg",
+      "url": "/uploads/LanaHitting2-1755630426426.jpeg",
+      "alt": "Lana Hitting 2",
+      "category": "Lana Hitting2",
+      "uploadDate": "2025-08-19T19:07:06.428Z",
+      "isActive": false
     }
   ],
   "activePhotos": {
-    "heroImage": "1755390615647",
+    "heroImage": "1755630426426",
     "profileImage": "1755390615647",
     "featuredAction": "1755390615647"
   }
